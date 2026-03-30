@@ -1,0 +1,49 @@
+# -----------------------------
+# Terraform
+# -----------------------------
+.terraform/
+.terraform.lock.hcl
+
+*.tfstate
+*.tfstate.*
+
+crash.log
+
+# tfvars 
+*.tfvars
+*.tfvars.json
+
+# override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# -----------------------------
+# Packer
+# -----------------------------
+*.pkrvars.hcl
+packer_cache/
+*.log
+
+# -----------------------------
+# Ansible
+# -----------------------------
+*.retry
+
+# inventory 
+ansible/inventory.ini
+
+# -----------------------------
+# Editor / IDE
+# -----------------------------
+.vscode/
+*.code-workspace
+
+# -----------------------------
+# OS / temp files
+# -----------------------------
+.DS_Store
+*.tmp
+*.bak
+*.swp
