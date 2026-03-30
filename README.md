@@ -1,5 +1,3 @@
-# README.md
-
 # Automatisation in Proxmox
 
 Heelo! It's my project fot virtualization in Proxmox using Packer, Terraform and Ansible.
@@ -28,6 +26,7 @@ packer build -var-file="secret.pkrvars.hcl" ubuntu-server-noble-numbat.pkr.hcl
 ### 2️⃣ Terraform
 
 ```bash
+cd ../
 cd terraform
 terraform init
 terraform plan -var-file="terraform.tfvars"
@@ -37,6 +36,7 @@ terraform apply -var-file="terraform.tfvars"
 ### 3️⃣ Ansible
 
 ```bash
+cd ../
 cd ansible
 ansible-playbook -i inventory k3s.yml
 ```
